@@ -6,7 +6,7 @@ module SFTPServer
     module API
       extend FFI::Library
       ffi_lib_flags :now, :global
-      ffi_lib 'ssh'
+      ffi_lib 'ssh2'
 
       class Bind < FFI::Struct
       end
